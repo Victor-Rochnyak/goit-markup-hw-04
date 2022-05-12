@@ -34,7 +34,9 @@
         <nav>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-item-link" href="./index.html">Студия</a>
+              <a class="navigation-item-link studia" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="navigation-item">
               <a class="navigation-item-link" href="./portfolio.html"
@@ -49,14 +51,20 @@
 
         <ul class="auth-list">
           <li class="auth-item">
-            <a class="auth-item-mail" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <a class="auth-item-mail" href="mailto:info@devstudio.com">
+              <svg class="auth-item-mail-icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="auth-item">
-            <a class="auth-item-tel" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+            <a class="auth-item-tel" href="tel:+380961111111">
+              <svg class="auth-item-tel-icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -64,7 +72,7 @@
 
     <main>
       <!-- hero section -->
-      <section class="hero-section section">
+      <section class="hero-section section hero-fon">
         <div class="conteiner">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
@@ -76,6 +84,11 @@
           <h2 class="visually-hidden">Наши особенности</h2>
           <ul class="specifics-list list">
             <li class="specifics-item">
+              <div class="specifics-pictures">
+                <svg class="specifics-icons" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="specifics-title">Внимание к деталям</h3>
               <p class="specificts-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -83,6 +96,11 @@
               </p>
             </li>
             <li class="specifics-item">
+              <div class="specifics-pictures">
+                <svg class="specifics-icons" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="specifics-title">Пунктуальность</h3>
               <p class="specificts-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -90,6 +108,11 @@
               </p>
             </li>
             <li class="specifics-item">
+              <div class="specifics-pictures">
+                <svg class="specifics-icons" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="specifics-title">Планирование</h3>
               <p class="specificts-text">
                 Равным образом консультация с широким активом в значительной
@@ -97,6 +120,11 @@
               </p>
             </li>
             <li class="specifics-item">
+              <div class="specifics-pictures">
+                <svg class="specifics-icons" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="specifics-title">Современные технологии</h3>
               <p class="specificts-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -110,7 +138,7 @@
       <section class="development-section section">
         <div class="conteiner">
           <h2 class="devefelopment-title">Чем мы занимаемся</h2>
-          <ul class="development-list list">
+          <ul class="development-list">
             <li class="development-item">
               <img
                 src="./images/development-jpg/img-3.jpg"
@@ -191,6 +219,30 @@
                 <p class="team-position" lang="en">UI Designer</p>
               </div>
             </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Regular customers -->
+      <section class="client-customers section">
+        <div class="conteiner">
+          <h2 class="client-title">Постоянные клиенты</h2>
+          <ul class="client-list">
+            <li class="client-logo">
+              <a href="index.html" class="link-client"></a>
+            </li>
+            <li class="client-logo">
+              <a href="index.html" class="link-client"></a>
+            </li>
+            <li class="client-logo">
+              <a href="index.html" class="link-client"></a>
+            </li>
+            <li class="client-logo">
+              <a href="index.html" class="link-client"></a>
+            </li>
+            <li class="client-logo">
+              <a href="index.html" class="link-client"></a>
+            </li>
+            <li class="client-logo" class="link-client"></li>
           </ul>
         </div>
       </section>

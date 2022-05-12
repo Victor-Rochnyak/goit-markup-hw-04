@@ -5,7 +5,7 @@
     --second-color: #757575;
     --selectoin-color: #2196F3;
     --button-color-hover-focus: #188CE8;
-    --footer-color: #2F303A;
+    --footer-heder-color: #2F303A;
 }
 
 body {
@@ -70,9 +70,9 @@ img {
     border-bottom: 1px solid #ECECEC;
 }
 
-
 .logo {
     color: var(--selectoin-color);
+
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -118,11 +118,20 @@ img {
 
 .navigation-item-link {
     color: #212121;
+
     font-family: var(--main-font);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.studia {
+    color: #2196F3;
+}
+
+.portfolio {
+    color: #2196F3;
 }
 
 .navigation-item-link:hover,
@@ -132,6 +141,10 @@ img {
 .auth-item-mail:focus,
 .auth-item-tel:focus,
 .auth-item-tel:hover {
+    color: var(--selectoin-color);
+}
+
+.auth-item-mail:hover:focus.auth-item-mail-icon {
     color: var(--selectoin-color);
 }
 
@@ -157,6 +170,7 @@ img {
 .auth-item-tel,
 .auth-item-mail {
     display: block;
+
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -164,31 +178,57 @@ img {
 .auth-item-tel,
 .auth-item-mail {
     color: #757575;
+
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
 
+.auth-item-mail,
+.auth-item-tel {
+    display: flex;
+    align-items: center;
+}
+
+.auth-item-mail-icon,
+.auth-item-tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /*#endregion HEADER*/
 
 /*#region HERO SECTION*/
 .hero-section {
-    background-color: #2F303A;
+    background: var(--footer-heder-color);
+    background: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+
     text-align: center;
+    min-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 
 }
 
 .hero-title {
     color: #FFFFFF;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     width: 696px;
     margin-right: auto;
     margin-left: auto;
@@ -197,7 +237,9 @@ img {
 
 .hero-btn {
     font-family: inherit;
+
     color: #FFFFFF;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -205,8 +247,10 @@ img {
     background-color: var(--selectoin-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
     cursor: pointer;
     border: none;
+
     min-width: 200px;
     padding: 10px 32px;
 }
@@ -236,6 +280,20 @@ img {
     margin-right: 0;
 }
 
+.specifics-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    left: 215px;
+    top: 774px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+}
+
 .specifics-title {
     font-size: 14px;
     font-weight: 700;
@@ -247,6 +305,7 @@ img {
 
 .specificts-text {
     color: #757575;
+
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -260,6 +319,7 @@ img {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
     margin-bottom: 50px;
 }
 
@@ -269,13 +329,13 @@ img {
 
 }
 
-.development-item {
+.development-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.development-item:last-child {
+/* .development-item:last-child {
     margin-right: 0;
-}
+} */
 
 /*#endregion DEVELOPMENT SECTION*/
 
@@ -285,26 +345,29 @@ img {
 }
 
 .team-title {
+    color: #212121;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+
     margin-bottom: 50px;
+
 }
 
 .team-list {
     display: flex;
 }
 
-.team-item {
+.team-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team-item:last-child {
+/* .team-item:last-child {
     margin-right: 0;
-}
+} */
 
 .team-name {
     padding-top: 30px;
@@ -318,8 +381,8 @@ img {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
 
+    margin-bottom: 10px;
 }
 
 .team-item {
@@ -331,15 +394,50 @@ img {
 }
 
 .team-position {
+    color: #757575;
+
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+}
+
+
+/*#endregion TEAM*/
+
+/*#region REGULAR CUSTOMERS*/
+
+.client-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+}
+
+.client-logo {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 
 }
 
-/*#endregion TEAM*/
+.client-logo:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+
+
+/*#endregion*/
 
 /*#region FOOTER SITE SECTION*/
 .footer-site {
@@ -377,11 +475,11 @@ img {
 .footer-site {
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 
 .footer {
     display: block;
+
     margin-bottom: 20px;
     margin-right: 0;
 }
@@ -397,23 +495,28 @@ img {
 /*#endregion FOOTER SITE*/
 
 /*#region FILTR-portfolio.html SECTION*/
+
 .filter-button {
+    color: #212121;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+
     cursor: pointer;
     border: none;
-    padding: 6px 22px;
     border-radius: 4px;
+
+    padding: 6px 22px;
 }
 
 .filter-list {
     display: flex;
     justify-content: center;
+
     margin-bottom: 50px;
 }
 
@@ -429,6 +532,7 @@ img {
 .filter-button:focus {
     color: #FFFFFF;
     background: #2196F3;
+
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -453,21 +557,36 @@ img {
     margin-bottom: 0;
 }
 
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16)
+}
+
+.project-item {
+    cursor: pointer;
+}
+
 
 .name-project {
+    color: #212121;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+
     margin-bottom: 4px;
 }
 
 .name-list {
+    color: #757575;
+
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+
 }
 
 .name-card {
@@ -480,6 +599,7 @@ img {
     border-left-width: 1px;
     border-left-style: solid;
     border-left-color: #eeeeee;
+
     padding: 20px 24px;
 }
 
