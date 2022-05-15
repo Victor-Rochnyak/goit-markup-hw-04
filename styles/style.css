@@ -199,6 +199,9 @@ img {
             rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
 
     text-align: center;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-right: auto;
@@ -427,10 +430,13 @@ img {
 .team-icon-item {
     width: 44px;
     height: 44px;
-    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.team-icon-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .team-icon-link {
@@ -588,8 +594,11 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer-icon-link {
@@ -657,6 +666,7 @@ img {
 .project-list {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .project-item {
@@ -672,16 +682,29 @@ img {
     margin-bottom: 0;
 }
 
-.project-item:hover,
+/* .project-item:hover,
 .project-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16)
+} */
+
+.project-item {
+    cursor: pointer;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16)
 }
 
-.project-item {
-    cursor: pointer;
-}
 
 
 .name-project {
